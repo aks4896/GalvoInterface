@@ -29,6 +29,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:diy_connectors
+LIBS:diy_diodes
+LIBS:diy_ics
+LIBS:diy_rcl
+LIBS:diy_regulators
+LIBS:diy_switches
+LIBS:diy_transformers
+LIBS:diy_transistors
+LIBS:diy_triac
+LIBS:diy_tubes
 LIBS:Interface HW-cache
 EELAYER 27 0
 EELAYER END
@@ -297,6 +307,17 @@ F 1 "OPA237" H 7250 5600 50  0000 C CNN
 F 2 "" H 7100 5750 60  0000 C CNN
 F 3 "" H 7100 5750 60  0000 C CNN
 	1    7100 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_US R?
+U 1 1 531E9055
+P 5750 3800
+F 0 "R?" V 5830 3800 50  0000 C CNN
+F 1 "R_US" V 5670 3800 50  0000 C CNN
+F 2 "" H 5750 3800 60  0000 C CNN
+F 3 "" H 5750 3800 60  0000 C CNN
+	1    5750 3800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
