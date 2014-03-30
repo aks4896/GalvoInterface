@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Defcon Bot Interface Brd"
-Date "26 mar 2014"
+Date "27 mar 2014"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -1001,4 +1001,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 6900 4850 6900
 Connection ~ 4550 6150
+Text GLabel 8200 2400 0    60   Input ~ 0
+DAC_X
 $EndSCHEMATC
