@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Defcon Bot Interface Brd"
-Date "1 apr 2014"
+Date "27 mar 2014"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -658,6 +658,8 @@ F 3 "" H 1650 3800 60  0000 C CNN
 	1    1650 3800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 3800 2550 3800
 $Comp
 L 74XXX1G32 U?
 U 1 1 5332465A
@@ -669,6 +671,8 @@ F 3 "" H 1600 5950 60  0000 C CNN
 	1    1600 5950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2050 5950 2500 5950
 Wire Wire Line
 	750  3750 1400 3750
 Text Label 850  3750 0    60   ~ 0
@@ -735,8 +739,8 @@ $Comp
 L R_US R?
 U 1 1 5332472C
 P 5550 3350
-F 0 "R?" H 5650 3400 50  0000 C CNN
-F 1 "R_US" H 5700 3300 50  0000 C CNN
+F 0 "R?" H 5650 3300 50  0000 C CNN
+F 1 "R_US" H 5700 3400 50  0000 C CNN
 F 2 "" H 5550 3350 60  0000 C CNN
 F 3 "" H 5550 3350 60  0000 C CNN
 	1    5550 3350
@@ -997,136 +1001,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 6900 4850 6900
 Connection ~ 4550 6150
-Text GLabel 7550 2350 2    60   Input ~ 0
-DAC_X+
-Wire Wire Line
-	2050 3800 2550 3800
-Wire Wire Line
-	2000 5950 2500 5950
-$Comp
-L +15V #PWR?
-U 1 1 533B46C7
-P 6250 1900
-F 0 "#PWR?" H 6250 1850 20  0001 C CNN
-F 1 "+15V" H 6250 2000 30  0000 C CNN
-F 2 "~" H 6250 1900 60  0000 C CNN
-F 3 "~" H 6250 1900 60  0000 C CNN
-	1    6250 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 1950 6250 1900
-$Comp
-L -15V #PWR?
-U 1 1 533B4779
-P 6400 2750
-F 0 "#PWR?" H 6400 2700 20  0001 C CNN
-F 1 "-15V" H 6400 2850 30  0000 C CNN
-F 2 "~" H 6400 2750 60  0000 C CNN
-F 3 "~" H 6400 2750 60  0000 C CNN
-	1    6400 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 2750 6250 2800
-Wire Wire Line
-	6250 2800 6400 2800
-Wire Wire Line
-	6400 2800 6400 2750
-$Comp
-L +15V #PWR?
-U 1 1 533B48D2
-P 6250 3350
-F 0 "#PWR?" H 6250 3300 20  0001 C CNN
-F 1 "+15V" H 6250 3450 30  0000 C CNN
-F 2 "~" H 6250 3350 60  0000 C CNN
-F 3 "~" H 6250 3350 60  0000 C CNN
-	1    6250 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 3400 6250 3350
-$Comp
-L +15V #PWR?
-U 1 1 533B48D9
-P 6250 4800
-F 0 "#PWR?" H 6250 4750 20  0001 C CNN
-F 1 "+15V" H 6250 4900 30  0000 C CNN
-F 2 "~" H 6250 4800 60  0000 C CNN
-F 3 "~" H 6250 4800 60  0000 C CNN
-	1    6250 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 4850 6250 4800
-$Comp
-L +15V #PWR?
-U 1 1 533B48E0
-P 6250 6250
-F 0 "#PWR?" H 6250 6200 20  0001 C CNN
-F 1 "+15V" H 6250 6350 30  0000 C CNN
-F 2 "~" H 6250 6250 60  0000 C CNN
-F 3 "~" H 6250 6250 60  0000 C CNN
-	1    6250 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 6300 6250 6250
-$Comp
-L -15V #PWR?
-U 1 1 533B48E7
-P 6400 4200
-F 0 "#PWR?" H 6400 4150 20  0001 C CNN
-F 1 "-15V" H 6400 4300 30  0000 C CNN
-F 2 "~" H 6400 4200 60  0000 C CNN
-F 3 "~" H 6400 4200 60  0000 C CNN
-	1    6400 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L -15V #PWR?
-U 1 1 533B48ED
-P 6400 5650
-F 0 "#PWR?" H 6400 5600 20  0001 C CNN
-F 1 "-15V" H 6400 5750 30  0000 C CNN
-F 2 "~" H 6400 5650 60  0000 C CNN
-F 3 "~" H 6400 5650 60  0000 C CNN
-	1    6400 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L -15V #PWR?
-U 1 1 533B48F3
-P 6400 7100
-F 0 "#PWR?" H 6400 7050 20  0001 C CNN
-F 1 "-15V" H 6400 7200 30  0000 C CNN
-F 2 "~" H 6400 7100 60  0000 C CNN
-F 3 "~" H 6400 7100 60  0000 C CNN
-	1    6400 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 7100 6250 7150
-Wire Wire Line
-	6250 7150 6400 7150
-Wire Wire Line
-	6400 7150 6400 7100
-Wire Wire Line
-	6250 5700 6400 5700
-Wire Wire Line
-	6400 5700 6400 5650
-Wire Wire Line
-	6250 5700 6250 5650
-Wire Wire Line
-	6250 4200 6250 4250
-Wire Wire Line
-	6250 4250 6400 4250
-Wire Wire Line
-	6400 4250 6400 4200
-Text GLabel 7550 3800 2    60   Input ~ 0
-DAC_X-
-Text GLabel 7550 5250 2    60   Input ~ 0
-DAC_Y+
-Text GLabel 7550 6700 2    60   Input ~ 0
-DAC_Y-
+Text GLabel 8200 2400 0    60   Input ~ 0
+DAC_X
 $EndSCHEMATC
