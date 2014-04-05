@@ -1,0 +1,3 @@
+Rename Slave-select pins to reflect how they are differnt for raspberry
+	pi and ControlStick
+
