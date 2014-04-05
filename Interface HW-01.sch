@@ -46,7 +46,7 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 2 5
-Title "Defcon Bot Interface Brd"
+Title "Connector, DAC, Power Input"
 Date "5 apr 2014"
 Rev "1"
 Comp ""

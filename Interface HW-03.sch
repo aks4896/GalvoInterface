@@ -46,7 +46,7 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 4 5
-Title ""
+Title "Y-Axis Buffer"
 Date "5 apr 2014"
 Rev "1"
 Comp ""
@@ -219,17 +219,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 3550 4050 3200
 Connection ~ 4050 3200
-$Comp
-L CONN_3 K?
-U 1 1 533B73AC
-P 7650 3700
-F 0 "K?" V 7600 3700 50  0000 C CNN
-F 1 "CONN_3" V 7700 3700 40  0000 C CNN
-F 2 "~" H 7650 3700 60  0000 C CNN
-F 3 "~" H 7650 3700 60  0000 C CNN
-	1    7650 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7300 3600 6000 3600
 Wire Wire Line
@@ -405,5 +394,49 @@ Wire Wire Line
 Wire Wire Line
 	6000 3800 6000 5050
 Text Notes 4150 1800 0    60   ~ 0
-GAIN = 15V/1.65V = 9.0909\nCUTOFF = 1692 kHz
+GAIN = 15V/1.65V = 9.0909 V/V\nCUTOFF = 1692 kHz
+$Comp
+L CONNECTOR_3 J?
+U 1 1 53406A91
+P 7350 3700
+F 0 "J?" H 7350 3900 30  0000 L CNN
+F 1 "TERM-3" H 7350 3500 30  0000 L CNN
+F 2 "" H 7350 3700 60  0000 C CNN
+F 3 "" H 7350 3700 60  0000 C CNN
+	1    7350 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 2200 0    60   Input ~ 0
+DAC_Y
+Wire Wire Line
+	1650 2200 2450 2200
+Wire Wire Line
+	2450 5200 1850 5200
+Wire Wire Line
+	1850 5200 1850 2200
+Connection ~ 1850 2200
+Text GLabel 1650 2500 0    60   Input ~ 0
+REF_1.65
+Wire Wire Line
+	1650 2500 2450 2500
+Wire Wire Line
+	2450 4900 2050 4900
+Wire Wire Line
+	2050 4900 2050 2500
+Connection ~ 2050 2500
+$Comp
+L GND #PWR?
+U 1 1 53406BB0
+P 7150 3900
+F 0 "#PWR?" H 7150 3900 30  0001 C CNN
+F 1 "GND" H 7150 3830 30  0001 C CNN
+F 2 "~" H 7150 3900 60  0000 C CNN
+F 3 "~" H 7150 3900 60  0000 C CNN
+	1    7150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3900 7150 3700
+Wire Wire Line
+	7150 3700 7300 3700
 $EndSCHEMATC
