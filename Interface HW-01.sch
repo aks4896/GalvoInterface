@@ -45,9 +45,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "Defcon Bot Interface Brd"
-Date "2 apr 2014"
+Date "5 apr 2014"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -222,7 +222,9 @@ F 3 "" H 5850 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 1350 5850 1550
+	5850 1350 5850 1450
+Wire Wire Line
+	5850 1450 5850 1550
 Connection ~ 5850 1450
 Wire Wire Line
 	3000 2900 3650 2900
@@ -296,7 +298,9 @@ F 4 "1%" H 2700 6250 30  0000 L CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 6500 2650 6700
+	2650 6500 2650 6600
+Wire Wire Line
+	2650 6600 2650 6700
 Wire Wire Line
 	3100 6600 2650 6600
 Connection ~ 2650 6600
@@ -377,7 +381,9 @@ F 3 "" H 4950 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 2400 4950 2700
+	4950 2400 4950 2450
+Wire Wire Line
+	4950 2450 4950 2700
 Wire Wire Line
 	4950 2700 4900 2700
 Wire Wire Line
@@ -410,7 +416,9 @@ F 3 "" H 4900 4250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 4250 4900 4550
+	4900 4250 4900 4300
+Wire Wire Line
+	4900 4300 4900 4550
 Wire Wire Line
 	4900 4550 4850 4550
 Wire Wire Line
@@ -461,7 +469,9 @@ $EndComp
 Wire Wire Line
 	3650 6300 3650 6400
 Wire Wire Line
-	3500 6000 3500 6300
+	3500 6000 3500 6050
+Wire Wire Line
+	3500 6050 3500 6300
 Connection ~ 3500 6050
 $Comp
 L 74XXX1G32 U?
@@ -497,7 +507,11 @@ Wire Wire Line
 Wire Wire Line
 	3100 4550 3600 4550
 Wire Wire Line
-	4100 6700 4650 6700
+	4100 6700 4250 6700
+Wire Wire Line
+	4250 6700 4350 6700
+Wire Wire Line
+	4350 6700 4650 6700
 Text GLabel 4650 6700 2    60   Input ~ 0
 REF_1.65V
 Wire Wire Line
@@ -602,7 +616,9 @@ $EndComp
 Text GLabel 5600 2900 2    60   Input ~ 0
 DAC_X
 Wire Wire Line
-	4900 2900 5600 2900
+	4900 2900 5350 2900
+Wire Wire Line
+	5350 2900 5600 2900
 $Comp
 L CONNECTOR TP?
 U 1 1 533B5AE6
@@ -622,7 +638,9 @@ Connection ~ 5350 2900
 Text GLabel 5550 4750 2    60   Input ~ 0
 DAC_Y
 Wire Wire Line
-	4850 4750 5550 4750
+	4850 4750 5300 4750
+Wire Wire Line
+	5300 4750 5550 4750
 $Comp
 L CONNECTOR TP?
 U 1 1 533B5B42
@@ -686,7 +704,9 @@ $EndComp
 Wire Wire Line
 	8200 1200 8100 1200
 Wire Wire Line
-	8100 1200 8100 2150
+	8100 1200 8100 2000
+Wire Wire Line
+	8100 2000 8100 2150
 Wire Wire Line
 	8200 2000 8100 2000
 Connection ~ 8100 2000
@@ -704,7 +724,11 @@ $EndComp
 Wire Wire Line
 	9000 1000 9100 1000
 Wire Wire Line
-	9100 1000 9100 2150
+	9100 1000 9100 1400
+Wire Wire Line
+	9100 1400 9100 1700
+Wire Wire Line
+	9100 1700 9100 2150
 Wire Wire Line
 	9000 1400 9100 1400
 Connection ~ 9100 1400
@@ -725,7 +749,9 @@ $EndComp
 Wire Wire Line
 	8000 1600 8200 1600
 Wire Wire Line
-	8000 750  8000 1600
+	8000 750  8000 800 
+Wire Wire Line
+	8000 800  8000 1600
 Wire Wire Line
 	8200 800  8000 800 
 Connection ~ 8000 800 
@@ -823,7 +849,9 @@ Wire Wire Line
 Wire Wire Line
 	7150 3850 7300 3850
 Wire Wire Line
-	7300 3800 7300 3900
+	7300 3800 7300 3850
+Wire Wire Line
+	7300 3850 7300 3900
 Connection ~ 7300 3850
 $Comp
 L +15V #PWR?
@@ -867,7 +895,9 @@ F 3 "" H 2600 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 1950 2600 2350
+	2600 1950 2600 2000
+Wire Wire Line
+	2600 2000 2600 2350
 Wire Wire Line
 	2750 2050 2750 2000
 Wire Wire Line
@@ -910,7 +940,9 @@ F 3 "" H 2600 3800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 3800 2600 4200
+	2600 3800 2600 3850
+Wire Wire Line
+	2600 3850 2600 4200
 Wire Wire Line
 	2750 3850 2600 3850
 Connection ~ 2600 3850
@@ -967,4 +999,108 @@ F 3 "" H 2600 3100 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2600 3050 2600 3100
+$Comp
+L MOS_N Q?
+U 1 1 53403CA2
+P 8750 5850
+F 0 "Q?" H 8550 6050 30  0000 L CNN
+F 1 "2N7002" H 8550 6000 30  0000 L CNN
+F 2 "~" H 8750 5850 60  0000 C CNN
+F 3 "~" H 8750 5850 60  0000 C CNN
+	1    8750 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 53403CAF
+P 8850 6350
+F 0 "#PWR?" H 8850 6350 30  0001 C CNN
+F 1 "GND" H 8850 6280 30  0001 C CNN
+F 2 "" H 8850 6350 60  0000 C CNN
+F 3 "" H 8850 6350 60  0000 C CNN
+	1    8850 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 6350 8850 6050
+$Comp
+L CONNECTOR_2 P?
+U 1 1 53403D3C
+P 9200 5050
+F 0 "P?" H 9200 5200 50  0000 L CNN
+F 1 "CONNECTOR_2" H 9200 4900 50  0000 L CNN
+F 2 "" H 9200 5050 60  0000 C CNN
+F 3 "" H 9200 5050 60  0000 C CNN
+	1    9200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_US R?
+U 1 1 53403D4A
+P 8850 5350
+F 0 "R?" H 8900 5400 30  0000 L CNN
+F 1 "0.0" H 8900 5350 30  0000 L CNN
+F 2 "" H 8850 5350 60  0000 C CNN
+F 3 "" H 8850 5350 60  0000 C CNN
+F 4 "5%" H 8900 5300 30  0000 L CNN "Tolerance"
+	1    8850 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5100 8850 5100
+Wire Wire Line
+	8850 5100 8850 5150
+Wire Wire Line
+	8850 5650 8850 5550
+$Comp
+L 3V3 #PWR?
+U 1 1 53403E6A
+P 8850 4850
+F 0 "#PWR?" H 8850 4950 40  0001 C CNN
+F 1 "3V3" H 8850 4975 40  0000 C CNN
+F 2 "" H 8850 4850 60  0000 C CNN
+F 3 "" H 8850 4850 60  0000 C CNN
+	1    8850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5000 8850 5000
+Wire Wire Line
+	8850 5000 8850 4850
+Text Notes 9050 5650 0    60   ~ 0
+LASER MODULE HAS INTERNAL \n700 OHM RESTISTOR, 0 OHM \nADDED IN CASE DIFFERENT \nLASER IS USED
+Wire Wire Line
+	7900 5850 8050 5850
+Wire Wire Line
+	8050 5850 8550 5850
+Text Label 8050 5850 0    60   ~ 0
+GPIO_12
+$Comp
+L R_US R?
+U 1 1 53403EFD
+P 8050 6100
+F 0 "R?" H 8100 6150 30  0000 L CNN
+F 1 "2.2k" H 8100 6100 30  0000 L CNN
+F 2 "" H 8050 6100 60  0000 C CNN
+F 3 "" H 8050 6100 60  0000 C CNN
+F 4 "1%" H 8100 6050 30  0000 L CNN "Tolerance"
+	1    8050 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5900 8050 5850
+Connection ~ 8050 5850
+$Comp
+L GND #PWR?
+U 1 1 53403F8F
+P 8050 6350
+F 0 "#PWR?" H 8050 6350 30  0001 C CNN
+F 1 "GND" H 8050 6280 30  0001 C CNN
+F 2 "" H 8050 6350 60  0000 C CNN
+F 3 "" H 8050 6350 60  0000 C CNN
+	1    8050 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 6300 8050 6350
 $EndSCHEMATC

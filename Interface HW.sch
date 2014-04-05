@@ -45,9 +45,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "Defcon Bot Interface Brd"
-Date "2 apr 2014"
+Date "5 apr 2014"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -62,7 +62,7 @@ F0 "Interface HW-01" 50
 F1 "Interface HW-01.sch" 50
 $EndSheet
 $Sheet
-S 2800 5800 900  750 
+S 2650 5800 900  750 
 U 533B5168
 F0 "Interface HW-02" 50
 F1 "Interface HW-02.sch" 50
@@ -3221,11 +3221,23 @@ B8 03 00 00 00 00 00 00 00 60 04 04 EE 00 00 00 00 00 00 00 00 18 01 81 3B 00 00
 EndData
 $EndBitmap
 $Sheet
-S 4900 5800 900  750 
+S 4350 5800 900  750 
 U 533B7211
 F0 "Interface HW-03" 50
 F1 "Interface HW-03.sch" 50
 $EndSheet
 Text Notes 750  6800 0    60   ~ 0
-PAGE 01:\n-- ControlStick + Raspberry Pi Conn\n-- DAC\n-- Reference Voltage\n-- Power Connector\n
+Page 01:\n-- ControlStick and \n    Raspberry Pi Conn\n-- DAC\n-- Reference Voltage\n-- Power Connector\n-- Laser Driver\n
+Text Notes 2600 6800 0    60   ~ 0
+Page 02:\n-- X-Axis Output Buffer\n
+Text Notes 4250 6800 0    60   ~ 0
+Page 03:\n-- Y-Axis Output Buffer\n
+$Sheet
+S 5800 5800 900  750 
+U 53404437
+F0 "Interface HW-04" 50
+F1 "Interface HW-04.sch" 50
+$EndSheet
+Text Notes 5700 6800 0    60   ~ 0
+Page 04:\n-- Input Power Step-Down Regulator\n
 $EndSCHEMATC
