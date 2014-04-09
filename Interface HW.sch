@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 5
 Title "Defcon Bot Interface Brd"
-Date "5 apr 2014"
+Date "9 apr 2014"
 Rev "1"
 Comp ""
 Comment1 ""
