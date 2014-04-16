@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Tue 15 Apr 2014 11:39:03 PM EDT
+Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Wed 16 Apr 2014 12:09:48 AM EDT
 
 BeginCmp
 TimeStamp = /533B4F18/533B69DC;
@@ -486,6 +486,41 @@ EndCmp
 BeginCmp
 TimeStamp = /533B4F18/533B5AE6;
 Reference = TP3;
+ValeurCmp = TEST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /533B4F18/534E0497;
+Reference = TP4;
+ValeurCmp = TEST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /533B4F18/534E035D;
+Reference = TP5;
+ValeurCmp = TEST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /533B4F18/534E0363;
+Reference = TP6;
+ValeurCmp = TEST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /533B4F18/534E054C;
+Reference = TP7;
+ValeurCmp = TEST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /533B4F18/534E05FD;
+Reference = TP8;
 ValeurCmp = TEST;
 IdModule  = PINTST;
 EndCmp
