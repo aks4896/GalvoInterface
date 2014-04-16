@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 2 5
 Title "Connector, DAC, Power Input"
-Date "9 apr 2014"
+Date "16 apr 2014"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -298,7 +298,7 @@ $EndComp
 Wire Wire Line
 	2650 6500 2650 6700
 Wire Wire Line
-	3100 6600 2650 6600
+	2350 6600 3100 6600
 Connection ~ 2650 6600
 $Comp
 L GND #PWR05
@@ -1086,4 +1086,31 @@ Text Label 9150 1600 0    60   ~ 0
 GPIO_12
 Wire Wire Line
 	9000 1600 9600 1600
+$Comp
+L CSMALL C31
+U 1 1 534DFA1A
+P 2350 6900
+F 0 "C31" H 2450 6950 30  0000 L CNN
+F 1 "0.1uF" H 2450 6900 30  0000 L CNN
+F 2 "~" H 2350 6900 60  0000 C CNN
+F 3 "~" H 2350 6900 60  0000 C CNN
+F 4 "50V" H 2450 6850 30  0000 L CNN "Voltage"
+	1    2350 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6800 2350 6600
+$Comp
+L GND #PWR032
+U 1 1 534DFB65
+P 2350 7200
+F 0 "#PWR032" H 2350 7200 30  0001 C CNN
+F 1 "GND" H 2350 7130 30  0001 C CNN
+F 2 "" H 2350 7200 60  0000 C CNN
+F 3 "" H 2350 7200 60  0000 C CNN
+	1    2350 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 7000 2350 7200
 $EndSCHEMATC
