@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 2 5
 Title "Connector, DAC, Power Input"
-Date "16 apr 2014"
+Date "19 apr 2014"
 Rev "1"
 Comp ""
 Comment1 ""

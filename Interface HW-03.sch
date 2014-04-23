@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 4 5
 Title "Y-Axis Buffer"
-Date "16 apr 2014"
+Date "19 apr 2014"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -416,7 +416,7 @@ Wire Wire Line
 	1850 5200 1850 2200
 Connection ~ 1850 2200
 Text GLabel 1650 2500 0    60   Input ~ 0
-REF_1.65
+REF_1.65V
 Wire Wire Line
 	1650 2500 2450 2500
 Wire Wire Line
