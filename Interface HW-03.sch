@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 4 5
 Title "Y-Axis Buffer"
-Date "19 apr 2014"
+Date "20 oct 2015"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -394,7 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 3800 6000 5050
 Text Notes 4950 1800 0    60   ~ 0
-GAIN = 15V/1.65V = 9.0909 V/V\nCUTOFF = 1692 kHz
+GAIN = 15V/1.65V = 9.0909 V/V\nCUTOFF = 1.692 kHz
 $Comp
 L CONNECTOR_3 J8
 U 1 1 53406A91

@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 3 5
 Title "X-Axis Buffer"
-Date "19 apr 2014"
+Date "20 oct 2015"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -394,7 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 3800 6000 5050
 Text Notes 5850 1800 0    60   ~ 0
-GAIN = 15V/1.65V = 9.0909\nCUTOFF = 1692 kHz
+GAIN = 15V/1.65V = 9.0909\nCUTOFF = 1.692 kHz
 Text GLabel 1650 2200 0    60   Input ~ 0
 DAC_X
 Wire Wire Line

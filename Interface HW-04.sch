@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 5 5
 Title "Buck Conveter"
-Date "19 apr 2014"
+Date "20 oct 2015"
 Rev "1"
 Comp ""
 Comment1 ""

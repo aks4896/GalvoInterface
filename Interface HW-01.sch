@@ -47,7 +47,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 2 5
 Title "Connector, DAC, Power Input"
-Date "19 apr 2014"
+Date "20 oct 2015"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -1207,4 +1207,6 @@ $EndComp
 Wire Wire Line
 	7150 4150 7050 4150
 Connection ~ 7050 4150
+Text Notes 3050 1700 0    60   ~ 0
+J1-J4 are C2000 Control Card Connectors
 $EndSCHEMATC
