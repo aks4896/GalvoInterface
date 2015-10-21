@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/aoeu/dev/defconbots/InterfaceHW/Interface HW.sch")
-    (date "Sun 20 Apr 2014 03:39:09 PM EDT")
+    (date "Tue 20 Oct 2015 08:09:58 PM EDT")
     (tool "eeschema (2013-may-18)-stable"))
   (components
     (comp (ref U5)
@@ -545,6 +545,14 @@
       (sheetpath (names "/Interface HW-04/") (tstamps /53404437/))
       (tstamp 5340638A)))
   (libparts
+    (libpart (lib diy_connectors) (part CONNECTOR)
+      (footprints
+        (fp PAD_1))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONNECTOR))
+      (pins
+        (pin (num 1) (name ~) (type passive))))
     (libpart (lib diy_connectors) (part CONNECTOR_2)
       (footprints
         (fp PAD_2)
@@ -566,14 +574,6 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))
         (pin (num 3) (name ~) (type passive))))
-    (libpart (lib diy_connectors) (part CONNECTOR)
-      (footprints
-        (fp PAD_1))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONNECTOR))
-      (pins
-        (pin (num 1) (name ~) (type passive))))
     (libpart (lib "Interface HW-cache") (part 74XXX1G32)
       (fields
         (field (name Reference) U)
@@ -657,6 +657,19 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib "Interface HW-cache") (part DACX311)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) DACX311)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name SYNCn) (type input))
+        (pin (num 2) (name SCLK) (type input))
+        (pin (num 3) (name Din) (type input))
+        (pin (num 4) (name AVDD) (type input))
+        (pin (num 5) (name GND) (type input))
+        (pin (num 6) (name Vout) (type input))))
     (libpart (lib "Interface HW-cache") (part DIODE_SCHOTTKY)
       (footprints
         (fp D?)
@@ -731,25 +744,12 @@
         (pin (num 5) (name FB) (type passive))
         (pin (num 6) (name COMP) (type passive))
         (pin (num 7) (name GND) (type passive))
-        (pin (num 8) (name SW) (type input))))
-    (libpart (lib "Interface HW-cache") (part DACX311)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) DACX311)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name SYNCn) (type input))
-        (pin (num 2) (name SCLK) (type input))
-        (pin (num 3) (name Din) (type input))
-        (pin (num 4) (name AVDD) (type input))
-        (pin (num 5) (name GND) (type input))
-        (pin (num 6) (name Vout) (type input)))))
+        (pin (num 8) (name SW) (type input)))))
   (libraries
-    (library (logical diy_connectors)
-      (uri /home/aoeu/dev/kicad/kicad_diy/lib/diy_connectors.lib))
     (library (logical "Interface HW-cache")
-      (uri "Interface HW-cache.lib")))
+      (uri "Interface HW-cache.lib"))
+    (library (logical diy_connectors)
+      (uri /home/aoeu/dev/kicad/kicad_diy/lib/diy_connectors.lib)))
   (nets
     (net (code 1) (name 3V3)
       (node (ref TP4) (pin 1))
